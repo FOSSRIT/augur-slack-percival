@@ -5,9 +5,8 @@ This project automates the process of adding a Slack bot to all channels, extrac
 ## Prerequisites
 
 1. **Python**: Make sure Python is installed on your machine.
-2. **psycopg2**: Install the psycopg2 library to interact with PostgreSQL.
-pip install psycopg2
-3. **Sir Perceval**: Install Perceval to collect data from Slack.
+2. **psycopg2**: Install the psycopg2 library using pip to interact with PostgreSQL.
+3. **Sir Perceval**: Install Perceval using pip to collect data from Slack.
 4. **Slack Bot**: Create a bot for the specific Slack workspace and obtain the API token.
 
 ## Files Included
@@ -23,14 +22,14 @@ pip install psycopg2
 
 1. Run the SQL code from `PercevalDatabaseQueries.sql` to create all necessary tables in your PostgreSQL database.
 
-### Step 2: Add Bot to Channels
+### Step 2: Adding SlackBot to Channels
 
 1. Execute `AddBotToChannels.py` to automatically add your Slack bot to all channels and collect channel IDs.
 
-### Step 3: Data Ingestion
+### Step 3: Data Insertion
 
 1. Run `PercevalDatabaseImplementation.py` to collect messages and related relevant data.Further, store it in the tables created earlier in your database.
-python PercevalDatabaseImplementation.py
+
 
 
 ## Configuration
